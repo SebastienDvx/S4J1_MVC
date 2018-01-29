@@ -87,3 +87,23 @@ On peut consulter  *"l'annuaire"* de ces routes avec la commande
 rails routes
 ```
 Pour chacune des méthodes, il faut maintenant créer la page !
+
+#### Création du controller
+Dans le terminal
+```
+rails g controller Controller_name
+```
+Créé un fichier **controller** et un fichier **view**
+
+Le fichier controller est composé d'une classe, vide.
+Le principe est de codé les méthodes qui composent le CRUD pour pouvoir faire appel à ces méthodes dans le but de manipuler la DB.
+
+A chaque fois qu'une méthode est créée dans le controller, il ne faut pas perdre de vue que l'on recherche à afficher une page pour un utilisateur.
+Il faut donc penser à éditer également un fichier view.html.erb
+Ce fichier est à créer dans le dossier **view** et dans le sous-dossier créer automatiquement par le controller (du même nom).
+Ce fichier est à écrire en HTML.
+La spécificité de ce type de fichier réside dans la possibilité d'intégrer du code Ruby directement dans le corps du HTML, grâce à la balise erb
+``` eRuby
+<% ...... %>
+<%= ..... %>
+```
