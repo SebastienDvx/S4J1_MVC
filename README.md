@@ -71,7 +71,7 @@ Le modèle étant maintenant créé, il va falloir commencer à manipuler tout �
 
 ### Le modèle CRUD
 
-Le **CRUD**, ou **C** reate **R** ead **U** pdate **D** estroy
+Le **CRUD**, ou **C**reate **R**ead **U**pdate **D** estroy
 est un  modèle permettant d'interagir avec notre base de donnée, et par l'interface du front-end.
 
 #### Commençons par les routes
@@ -86,3 +86,4 @@ On peut consulter  *"l'annuaire"* de ces routes avec la commande
 ```
 rails routes
 ```
+Pour chacune des méthodes, il faut maintenant créer la page !
