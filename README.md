@@ -105,5 +105,15 @@ Ce fichier est à écrire en HTML.
 La spécificité de ce type de fichier réside dans la possibilité d'intégrer du code Ruby directement dans le corps du HTML, grâce à la balise erb
 ``` eRuby
 <% ...... %>
-<%= ..... %>
+<%= ..... %>  #Si on souahite afficher le résultat du code
 ```
+
+#### Association de modèles
+
+Les modèles sont en fait des tables issus d'une base de donnée ***relationnelle***.
+Il est donc possible de créer plusieurs modèles au sein d'une même appli, et de les relier entre eux, pour créer une réelle interaction.
+
+Pour cela, il faut spécifier dans le dossier *models*
+* Pour chaque fichier lié :
+  - has_many :model1 (pour le modèle qui peut possèder plusieurs instances)
+  - belongs_to :model2 (pour le modèle qui possèdera une instance unique.)
