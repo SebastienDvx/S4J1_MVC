@@ -15,4 +15,18 @@ Contrairement à un site statique, un site dynamique contient du code qui s’ex
 1. Le site accède au routeur.
 1. Le routeur envoie une requête au controller via une *méthode*.
 
-Le controller est l'entité centrale du modèle. Il fait le lien entre le routeur et le modèle, entre le modèle et la view et entre la view et l'utilisateur !
+Le **controller** est l'entité centrale du modèle. Il fait le lien entre le routeur et le modèle, entre le modèle et la view et entre la view et l'utilisateur !
+
+Le **modèle**, gère la base de donnée.
+
+La **view**, gère la construction de la page HTML, et l'envoi de cette page.
+
+
+## Comment ca marche ??
+
+### La gestion des routes.
+
+Dans un premier temps nous allons analyser ce que sont les *routes* dans le modèle MVC.
+
+Le fichier routes.rb se situe dans le dossier **config**, généré lors de la création de l'app Rails.
+> Il est vide
